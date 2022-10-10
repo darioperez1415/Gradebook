@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/Gradebook.Test.csproj": {}
+    "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/GradeBook.Test.csproj": {}
   },
   "projects": {
     "/Users/darioperez/workspace/projects/gradebook/src/Gradebook/Gradebook.csproj": {
@@ -57,12 +57,12 @@
         }
       }
     },
-    "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/Gradebook.Test.csproj": {
+    "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/GradeBook.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/Gradebook.Test.csproj",
-        "projectName": "Gradebook.Test",
-        "projectPath": "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/Gradebook.Test.csproj",
+        "projectUniqueName": "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/GradeBook.Test.csproj",
+        "projectName": "GradeBook.Test",
+        "projectPath": "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/GradeBook.Test.csproj",
         "packagesPath": "/Users/darioperez/.nuget/packages/",
         "outputPath": "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/obj/",
         "projectStyle": "PackageReference",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wmeZYuOOIV5HnVJL3gNkPFEzT06p5h6411NkHHNiFxzPAo/TOwfEgYWJfG7h9o1qiy6i4dttl2OC8/Q6bhVRtg==",
+  "dgSpecHash": "pS7htpjF9lAeN1FXe311x1CtPjQY2tkZqYhBBqckjr4tZdENM1OIRkIOIGiJmuUIIaakyg6FYIS6Rp+nB6nIGg==",
   "success": true,
-  "projectFilePath": "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/Gradebook.Test.csproj",
+  "projectFilePath": "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/GradeBook.Test.csproj",
   "expectedPackageFiles": [
     "/Users/darioperez/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
     "/Users/darioperez/.nuget/packages/microsoft.codecoverage/17.1.0/microsoft.codecoverage.17.1.0.nupkg.sha512",
