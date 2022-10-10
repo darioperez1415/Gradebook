@@ -97,3 +97,8 @@
 /Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/obj/Debug/net6.0/Gradebook.Test.genruntimeconfig.cache
 /Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/obj/Debug/net6.0/ref/Gradebook.Test.dll
 /Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/bin/Debug/net6.0/CoverletSourceRootsMapping
+/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/bin/Debug/net6.0/Gradebook.deps.json
+/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/bin/Debug/net6.0/Gradebook.runtimeconfig.json
+/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/bin/Debug/net6.0/Gradebook
+/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/bin/Debug/net6.0/Gradebook.dll
+/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/bin/Debug/net6.0/Gradebook.pdb
