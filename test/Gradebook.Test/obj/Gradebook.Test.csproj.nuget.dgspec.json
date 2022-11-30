@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/GradeBook.Test.csproj": {}
+    "/Users/darioperez/workspace/projects/Gradebook2/Gradebook/test/Gradebook.Test/GradeBook.Test.csproj": {}
   },
   "projects": {
-    "/Users/darioperez/workspace/projects/gradebook/src/Gradebook/Gradebook.csproj": {
+    "/Users/darioperez/workspace/projects/Gradebook2/Gradebook/src/Gradebook/Gradebook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/darioperez/workspace/projects/gradebook/src/Gradebook/Gradebook.csproj",
+        "projectUniqueName": "/Users/darioperez/workspace/projects/Gradebook2/Gradebook/src/Gradebook/Gradebook.csproj",
         "projectName": "Gradebook",
-        "projectPath": "/Users/darioperez/workspace/projects/gradebook/src/Gradebook/Gradebook.csproj",
+        "projectPath": "/Users/darioperez/workspace/projects/Gradebook2/Gradebook/src/Gradebook/Gradebook.csproj",
         "packagesPath": "/Users/darioperez/.nuget/packages/",
-        "outputPath": "/Users/darioperez/workspace/projects/gradebook/src/Gradebook/obj/",
+        "outputPath": "/Users/darioperez/workspace/projects/Gradebook2/Gradebook/src/Gradebook/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/darioperez/.nuget/NuGet/NuGet.Config"
@@ -57,14 +57,14 @@
         }
       }
     },
-    "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/GradeBook.Test.csproj": {
+    "/Users/darioperez/workspace/projects/Gradebook2/Gradebook/test/Gradebook.Test/GradeBook.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/GradeBook.Test.csproj",
+        "projectUniqueName": "/Users/darioperez/workspace/projects/Gradebook2/Gradebook/test/Gradebook.Test/GradeBook.Test.csproj",
         "projectName": "GradeBook.Test",
-        "projectPath": "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/GradeBook.Test.csproj",
+        "projectPath": "/Users/darioperez/workspace/projects/Gradebook2/Gradebook/test/Gradebook.Test/GradeBook.Test.csproj",
         "packagesPath": "/Users/darioperez/.nuget/packages/",
-        "outputPath": "/Users/darioperez/workspace/projects/gradebook/test/Gradebook.Test/obj/",
+        "outputPath": "/Users/darioperez/workspace/projects/Gradebook2/Gradebook/test/Gradebook.Test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/darioperez/.nuget/NuGet/NuGet.Config"
@@ -79,8 +79,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/darioperez/workspace/projects/gradebook/src/Gradebook/Gradebook.csproj": {
-                "projectPath": "/Users/darioperez/workspace/projects/gradebook/src/Gradebook/Gradebook.csproj"
+              "/Users/darioperez/workspace/projects/Gradebook2/Gradebook/src/Gradebook/Gradebook.csproj": {
+                "projectPath": "/Users/darioperez/workspace/projects/Gradebook2/Gradebook/src/Gradebook/Gradebook.csproj"
               }
             }
           }

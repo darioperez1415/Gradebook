@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dpPEsZsrwJtPQeMbiBMstR+5dQIbVX/jDSU6Ue4g08aatSCvi7uvdOaXTR4TSUmCtGZAZxHXdpzCMBU7mwkcBg==",
+  "dgSpecHash": "ElxH8UyvQXYbPM8pBb7aQkyCD4Shi9IWYpxoNUZW41oigWt+hANJCtYNFIAuvQrQEn+WfPMlRrJj2JZj2ib1Eg==",
   "success": true,
-  "projectFilePath": "/Users/darioperez/workspace/projects/gradebook/src/Gradebook/Gradebook.csproj",
+  "projectFilePath": "/Users/darioperez/workspace/projects/Gradebook2/Gradebook/src/Gradebook/Gradebook.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
