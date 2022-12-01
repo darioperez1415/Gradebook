@@ -3,9 +3,68 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
-  public class Book
+
+    public delegate void GradeAddedDelegate(object sender, EventArgs args); 
+
+    public class NamedObject 
+    {
+        public NamedObject(string name)
+        {
+            Name = name;
+        }
+
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+
+    public interface IBook
+    {
+        void AddGrade(double grade);
+        Statistics GetStatistics();
+        string Name { get; }
+        event GradeAddedDelegate GradeAdded;
+    }
+
+  public abstract class Book : NamedObject, IBook
+    {
+        protected Book(string name) : base(name)
+        {
+        }
+
+        public abstract event GradeAddedDelegate GradeAdded;
+
+        public abstract void AddGrade(double grade);
+
+        public abstract Statistics GetStatistics();
+
+    }
+    public class DiskBook : Book
+    {
+        public DiskBook(string name) : base(name)
+        {
+
+        }
+
+        public override event GradeAddedDelegate GradeAdded;
+
+        public override void AddGrade(double grade)
+        {
+            var writer = File.AppendText($"{Name}.txt");
+            writer.WriteLine(grade);
+        }
+
+        public override Statistics GetStatistics()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class InMemoryBook : Book
   {
-    public Book(string name)
+    public InMemoryBook(string name) : base(name)
     {
       grades = new List<double>();
       Name = name;
@@ -32,18 +91,26 @@ namespace GradeBook
               break;
         }
     }
-    public void AddGrade(double grade)
+    public override void AddGrade(double grade)
     { 
       if(grade <= 100 && grade >= 0)
       {
           grades.Add(grade);
+          if(GradeAdded != null)
+          {
+             GradeAdded(this, new EventArgs());
+          }
+           
       }
       else 
       {
           throw new ArgumentException($"Invalid {nameof(grade)}");
       }
     }
-    public Statistics GetStatistics()
+
+    public override event GradeAddedDelegate GradeAdded;
+
+    public override Statistics GetStatistics()
     {
       var result = new Statistics();
       result.Average = 0.0;
@@ -83,15 +150,13 @@ namespace GradeBook
 
   private List<double> grades;
 
-    public string Name
+        public string Name
         {
             get;
-            private set;
-
+            set;
         }
 
-        const string category = "Science";
+        public const string CATEGORY = "Science";
         
-  private string name;
  }
 }

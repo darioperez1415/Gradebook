@@ -4,21 +4,48 @@ using GradeBook;
 
 namespace Gradebook.Test
 {
-public class TypeTest
-    {  
+    public delegate string WriteLogDelegate(string logMessage);
+
+    public class TypeTest
+    {
+        int count = 0; 
+        
         [Fact]
-        public void Test1()
+        public void WriteLogDelegateCanPointToMethod()
+        {
+            WriteLogDelegate log = ReturnMessage;
+            log += ReturnMessage;
+            log += IncrementCount;
+
+            var result = log("Hello!");
+            Assert.Equal(3, count);
+        }
+
+        string IncrementCount(string message)
+
+        {
+            count++;
+            return message.ToLower();
+        }
+        string ReturnMessage(string message)
+
+        {
+            count++;
+            return message;
+        }
+
+        [Fact]
+        public void ValueTypesAlsoPassByValue()
         {
             var x = GetInt();
             SetInt(ref x);
             
-           // Assert.Equal(3,x);
             Assert.Equal(42,x);
         }
 
-    private void SetInt(ref int x)
+    private void SetInt(ref Int32 z)
     {
-      x = 42;
+      z = 42;
     }
 
     private int GetInt()
@@ -37,9 +64,9 @@ public class TypeTest
         
         }
 
-    private void GetBookSetName(ref Book book, string name)
+    private void GetBookSetName(ref InMemoryBook book, string name)
     {
-      book = new Book(name);
+      book = new InMemoryBook(name);
       book.Name = name;
     }
         [Fact]
@@ -68,9 +95,9 @@ public class TypeTest
         
         }
 
-    private void GetBookSetName(Book book, string name)
+    private void GetBookSetName(InMemoryBook book, string name)
     {
-      book = new Book(name);
+      book = new InMemoryBook(name);
       book.Name = name;
     }
         [Fact]
@@ -84,7 +111,7 @@ public class TypeTest
         
         }
 
-    private void SetName(Book book, string name)
+    private void SetName(InMemoryBook book, string name)
     {
       book.Name = name;
     }
@@ -112,9 +139,9 @@ public class TypeTest
         Assert.True(Object.ReferenceEquals(book1,book2));
         
         }
-    Book GetBook(string name)
+    InMemoryBook GetBook(string name)
     {
-      return new Book(name);
+      return new InMemoryBook(name);
     }
   }
 }
