@@ -10,7 +10,7 @@ namespace Gradebook.Test
         public void BookCalculatesAnAverageGrade()
         {
             // arrange
-            var book = new Book(" ");
+            var book = new InMemoryBook(" ");
             book.AddGrade(89.1);
             book.AddGrade(90.5);
             book.AddGrade(77.3);
@@ -29,7 +29,7 @@ namespace Gradebook.Test
         [Fact]
         public void SomeTest()
         {
-            Book myBook = new Book("test");
+            InMemoryBook myBook = new InMemoryBook("test");
             // do stuff
             // set brakpoints
             // verify output
